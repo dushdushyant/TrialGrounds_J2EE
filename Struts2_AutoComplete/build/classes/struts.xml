@@ -1,0 +1,19 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="firstPkg" extends="struts-default">
+		<action name="autoComplete" class="com.test.actions.Action1">
+			<result name="input">index.jsp</result>
+			<result name="success">page1.jsp</result>
+		</action>
+		
+		<action name="submitForm" class="com.test.actions.Action1"
+		method="printreceived">
+			<result name="input">index.jsp</result>
+			<result name="success">page1.jsp</result>
+		</action>
+	</package>
+</struts>
